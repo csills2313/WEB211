@@ -1,0 +1,164 @@
+<!--
+     Little's Garden Supply
+      
+       Registration  Page
+      Author: Carter Sills
+      Date: 12/14/2014   
+
+      Filename:    registration.html
+            
+   -->
+
+<!doctype html>
+
+<head>
+<title>Flower Shop</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="register.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/additional-methods.min.js"></script>
+<script type="text/javascript" src="js/shopping card add item.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/getcookie.js"></script>
+<!--Fuction for clearing cookies on registration confirmation page-->
+<script>
+function clearCookie() {
+	$.cookie('fullname',"", { expires: -1 }); 
+	 $.cookie('email',"", { expires: -1 });
+	 $.cookie('address',"", { expires: -1 });
+	 $.cookie('phone',"", { expires: -1 });
+	 $.cookie('zipcode',"", { expires: -1 });
+	 $.cookie('country',"", { expires: -1 });
+	 
+ document.getElementById("fullname").innerHTML ="";
+document.getElementById("email").innerHTML = "";
+document.getElementById("address").innerHTML = "";
+document.getElementById("phone").innerHTML = "";
+document.getElementById("zipcode").innerHTML = "";
+document.getElementById("country").innerHTML = "";
+	
+}
+
+</script>
+</head>
+<body>
+<div id="wrap">
+  <div class="header">
+  <div>&nbsp;</div>
+    <div class="logo"><h1>Little's Garden Supply</h1></div><!--Main Page Heading-->
+    <!--Main Page Navigation-->
+    <nav id="menu">
+      <ul>
+        <li class="selected"><a href="index.html">Home</a></li>
+        <li><a href="fertilizer.html">Fertilizer</a></li>
+        <li><a href="flowers.html">Flowers</a></li>
+        <li></li>
+        <li></li>
+        <li><a href="register.html">Register</a></li>
+        <li></li>
+        <li><a href="mailto:csills2313@gmail.com">Contact Us</a></li>
+        <li><a href="vegetables.html">Vegetables</a></li>
+        <li><a href="tools.html">Garden Tools</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="center_content">
+    <div class="left_content">
+      <div class="title">Registration Confirmation</div><!--Displays Registratin confirmation using cookies-->
+      <div class="feat_prod_box_details">
+        <p class="details"> Thank you for subscribing. </p>
+        <div id="fullname"></div>
+        <div id="email"></div>
+        <div id="address"></div>
+        <div id="phone"></div>
+        <div id="zipcode"></div>
+        <div id="country"></div>
+        
+      </div>
+      <form action="index.html">
+<input name="clearcookie" type="submit" id="clearcookie" onClick="clearCookie();" value="Return Home"><!--Clears Cookies-->
+</form>
+      <div class="clear"></div>
+    </div>
+    
+    <!--end of left content-->
+    <div class="right_content">
+      <div class="cart">
+        <div class="title" onClick="alert(&quot;Click ok to checkout.&quot;)"><span class="title_icon"><img src="images/cart.gif" alt="" /></span><a href="cart.html">My cart</a></div>
+        
+        <a href="cart.html" class="view_cart" onClick="alert(&quot;Click ok to checkout.&quot;)">view cart</a> </div>
+      <div class="title">About Our Shop</div>
+      <div class="about">
+        <p> <img src="images/about.gif" alt="" class="right" /> Our shop was founded in 1973. The original shop is show in the picture to the right. We have grown in size since those day now have shops in 10 states. </p></div>
+      <form name="order_form3">
+<div class="right_box">
+      <!--Special Items Order Form Section-->
+        <div class="title">Specials</div>
+        <div class="new_prod_box"> <a href="#">Red Poppies $1.99</a>
+          <div class="new_prod_bg"><a href="#"><img src="images/flowers/xfs_149x137_s80_poppy_flower_198889.jpg" alt="Red Poppy" class="thumb" border="0" /></a> </div>
+        <input name="add_to_cart" type="submit" class="add_to_cart"  value="Add to Cart" onclick="placeOrder('F1w9','Red Poppy','1.99',8)">
+        <br>
+          <span class="form_row">Quantity:</span>
+          <input name="qty8" size="1" value="1" maxlength="1" onfocus="clearValue('8')" id="qty8" />
+        </div>
+        <div class="new_prod_box"> <a href="#">White Narcissus $1.99</a>
+          <div class="new_prod_bg"><a href="#"><img src="images/flowers/xfs_149x137_s80_white_narcissus.jpg" alt="White Narcissus" class="thumb" border="0" /></a> </div>
+       <input name="add_to_cart" type="submit" class="add_to_cart"  value="Add to Cart" onclick="placeOrder('Fw10','White Narcissus','1.99',9)">
+       <br>
+          <span class="form_row">Quantity: </span>
+          <input name="qty9" size="1" value="1" maxlength="1" onfocus="clearValue('9')" id="qty9" />
+        </div>
+        <div class="new_prod_box"> <a href="#">Morning Glory $1.99</a>
+          <div class="new_prod_bg"><a href="#"><img src="images/flowers/xfs_149x137_s80_morning_glory_flower_196133.jpg" alt="Morning Glory" class="thumb" border="0" /></a> </div>
+        <input name="add_to_cart" type="submit" class="add_to_cart"  value="Add to Cart" onclick="placeOrder('Fw11','Morning Glory','1.99',10)">
+        <br>
+          <span class="form_row">Quantity:</span>
+          <input name="qty10" size="1" value="1" maxlength="1" onfocus="clearValue('10')" id="qty10" />
+        </div>
+        
+      </div>
+</form>
+      <div class="right_box">
+        <div class="title">Categories</div><!--Categories Listing-->
+        <ul class="list">
+          <li><a href="#">Gardening Tools</a></li>
+          <li><a href="#">Seeds</a></li>
+          <li><a href="#">specials</a></li>
+          <li><a href="#">Fertilizer</a></li>
+          <li><a href="#">Sprinklers</a></li>
+          <li><a href="#">Trellises</a></li>
+          <li><a href="#">Garden Hoses</a></li>
+          <li><a href="#">Spreaders</a></li>
+          <li><a href="#">Vegetables</a></li>
+          <li><a href="#">flower gifts</a></li>
+          <li></li>
+        </ul>
+        <div class="title">Partners</div><!--Partners Listing-->
+        <ul class="list">
+          <li><a href="#">Home Depot</a></li>
+          <li><a href="#">Lowes</a></li>
+          <li><a href="#">Kmart</a></li>
+          <li><a href="#">Burpee's</a></li>
+          <li><a href="#">Farmer's Supply</a></li>
+          <li><a href="#">Stokes Seeds</a></li>
+          <li><a href="#">Park Seed</a></li>
+          <li><a href="#">Spring Hill Nursery</a></li>
+          <li><a href="#">Wayside Gardens</a></li></ul>
+      </div>
+    </div>
+    <!--end of right content-->
+    <div class="clear"></div>
+  </div>
+  <!--end of center content-->
+  <div class="footer"><!--Footer content -->
+    <div class="right_footer"> 
+      <a href="#">home</a> <a href="#">about us</a> <a href="#">services</a> <a href="#">privacy policy</a> <a href="#">contact us</a>
+    </div>
+    <div class="right_footer"><a href="http://all-free-download.com/free-photos/flower-images.html">All images obtained from </a><a href="http://all-free-download.com/free-photos/flower-images.html">All-Free-Download.com</a></div>
+  </div>
+</div>
+</body>
+</html>

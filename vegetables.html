@@ -1,0 +1,233 @@
+<!--
+     Little's Garden Supply
+      
+       Vegetables Products page
+      Author: Carter Sills
+      Date: 12/14/2014   
+
+      Filename:    vegetables.html
+            
+   -->
+
+<!doctype html>
+
+<head>
+<title>Little's Garden Supply</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/shopping card add item.js"></script>
+<script type="text/javascript" src="js/rollover.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <div class="header">
+  <div>&nbsp;</div>
+    <div class="logo"><h1>Little's Garden Supply</h1></div><!--Main Page Heading-->
+    <nav id="menu"><!--Main Page Navigation-->
+      <ul>
+        <li class="selected"><a href="index.html">Home</a></li>
+        <li><a href="fertilizer.html">Fertilizer</a></li>
+        <li><a href="flowers.html">Flowers</a></li>
+        <li></li>
+        <li></li>
+        <li><a href="register.html">Register</a></li>
+        <li></li>
+        <li><a href="mailto:csills2313@gmail.com">Contact Us</a></li>
+        <li><a href="vegetables.html">Vegetables</a></li>
+        <li><a href="tools.html">Garden Tools</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="center_content">
+    <section class="left_content">
+      <div class="title">Featured Vegetables</div>
+      <form name="order_form"><!--Vegetable Featured products order form -->
+<div class="feat_prod_box">
+        <div class="prod_img"><a href="#"><img src="images/vegetables/xfs_150x150_s80_bell_pepper_plant_pepper_shrub_paprika.jpg" alt="Paprika" border="0" class="rollover3" /></a></div>
+        <div class="prod_det_box">
+          <div class="box_top"></div>
+          <div class="box_center">
+            <div class="prod_title">Paprika $2.99</div>
+            <p class="details">Paprika. </p>
+            <p>
+              <input name="add_to_cart" type="submit" class="add_to_cart" id="add_to_cart" value="Add to Cart"  onclick="placeOrder('Vgw1','Paprika','2.99',0)">
+              Quantity:
+
+              <input name="qty0" size="1" value="1" maxlength="1" onfocus="clearValue('0')" />
+            </p>
+            <div class="clear"></div>
+          </div>
+          <div class="box_bottom"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="feat_prod_box">
+        <div class="prod_img"><a href="#"><img src="images/vegetables/xfs_150x150_s80_black_zucchinin.jpg" alt="Zuchinni" border="0" class="rollover4" /></a></div>
+        <div class="prod_det_box">
+          <div class="box_top"></div>
+          <div class="box_center">
+            <div class="prod_title">Zuchinni Squash $4.99</div>
+            <p class="details">Chrismas Flowers are an old time favorite that Grandma used to plant. </p>
+           <input name="add_to_cart" type="submit" class="add_to_cart" id="add_to_cart" value="Add to Cart" onclick="placeOrder('Vgw2','Zucinni Squash','4.99',1)">
+           Quantity:
+
+              <input name="qty1" size="1" value="1" maxlength="1" onfocus="clearValue('1')" id="qty1" />
+            <div class="clear"></div>
+          </div>
+          <div class="box_bottom"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+</form>
+      <div class="title">New Vegetables</div>
+      <form name="order_form2"><!--New Vegetable products order form -->
+<div class="new_products">
+        <div class="new_prod_box"> <div class="prod_title">
+          <p>Carrots</p>
+          <p>$2.67</p>
+        </div>
+          <div class="new_prod_bg"><img src="images/vegetables/xfs_150x150_s80_carrots_191426.jpg" alt="Carrots" class="thumb" border="0" /> </div>
+       <input name="add_to_cart" type="submit" class="add_to_cart" id="add_to_cart" value="Add to Cart" onclick="placeOrder('Vgw3','Carrots','2.67',2)">
+       <br>
+          <span class="form_row">Quantity:</span>
+          <input name="qty2" size="1" value="1" maxlength="1" onfocus="clearValue('2')" id="qty2" />
+       </div>
+        <div class="new_prod_box"> <div class="prod_title">
+          <p>Silver Queen</p>
+          <p>$4.00</p>
+        </div>
+          <div class="new_prod_bg"><img src="images/vegetables/xfs_150x150_s80_corn.jpg" alt="Silver Queen" class="thumb" border="0" /> </div>
+        <input name="add_to_cart" type="submit" class="add_to_cart" id="add_to_cart" value="Add to Cart" onclick="placeOrder('Vgw4','Silver Queen','4.00',3)">
+        <br>
+          <span class="form_row">Quantity:</span>
+          <input name="qty3" size="1" value="1" maxlength="1" onfocus="clearValue('3')" id="qty3" />
+        </div>
+        <div class="new_prod_box"> <div class="prod_title">
+          <p>Chili Peppers</p>
+          <p>$3.67</p>
+        </div>
+          <div class="new_prod_bg"><a href="#"><img src="images/vegetables/xfs_150x150_s80_chili_plant_187171.jpg" alt="Chili Peppers" class="thumb" border="0" /></a> </div>
+        <input name="add_to_cart" type="submit" class="add_to_cart"  value="Add to Cart" onclick="placeOrder('Vgw5','Chili Peppers','3.67',4)">
+        <br>
+          <span class="form_row">Quantity:</span>
+          <input name="qty4" size="1" value="1" maxlength="1" onfocus="clearValue('4')" id="qty4" />
+        
+        </div>
+        <div class="new_prod_box"> <div class="prod_title">
+          <p>Yellow Corn</p>
+          <p>$3.80</p>
+        </div>
+          <div class="new_prod_bg"><a href="#"><img src="images/vegetables/xfs_150x150_s80_corn_picture_02_hd_pictures.jpg" alt="Yellow Corn" class="thumb" border="0" /></a> </div>
+        <input name="add_to_cart" type="submit" class="add_to_cart"  value="Add to Cart" onclick="placeOrder('Vgw6','Yellow Corn','3.80',5)">
+        <br>
+          <span class="form_row">Quantity:</span>
+          <input name="qty5" size="1" value="1" maxlength="1" onfocus="clearValue('5')" />
+        
+        </div>
+        <div class="new_prod_box"> <div class="prod_title">
+          <p>Cucumber</p>
+          <p>$2.00</p>
+        </div>
+          <div class="new_prod_bg"><a href="#"><img src="images/vegetables/xfs_150x150_s80_cucumber_vegetable.jpg" alt="Cucumber" class="thumb" border="0" /></a> </div>
+        <input name="add_to_cart" type="submit" class="add_to_cart"  value="Add to Cart" onclick="placeOrder('Vgw7','Cucumber','2.00',6)">
+        <br>
+          <span class="form_row">Quantity:</span>
+          <input name="qty6" size="1" value="1" maxlength="1" onfocus="clearValue('6')" />
+        
+        </div>
+        <div class="new_prod_box"> <div class="prod_title">
+          <p>Curly Cabbage</p>
+          <p>$3.20</p>
+        </div>
+          <div class="new_prod_bg"><a href="#"><img src="images/vegetables/xfs_150x150_s80_curly_cabbage_detail_202974.jpg" alt="Curly Cabbage" class="thumb" border="0" /></a> </div>
+        <input name="add_to_cart" type="submit" class="add_to_cart"  value="Add to Cart" onclick="placeOrder('Vgw8','Curly Cabbage','3.20',7)">
+        <br>
+          <span class="form_row">Quantity:</span>
+          <input name="qty7" size="1" value="1" maxlength="1" onfocus="clearValue('7')" />
+        
+        </div>
+      </div>
+</form>
+      
+      <div class="clear"></div>
+      
+    </section>
+    <!--end of left content-->
+    <div class="right_content"><!--Links to shopping cart/checkout-->
+      <div class="cart">
+        <div class="title" onClick="alert(&quot;Click ok to checkout.&quot;)"><span class="title_icon"><img src="images/cart.gif" alt="" /></span><a href="cart.html">My cart</a></div>
+        
+        <a href="cart.html" class="view_cart" onClick="alert(&quot;Click ok to checkout.&quot;)">view cart</a> </div>
+      <div class="title">About Our Shop</div>
+      <div class="about">
+        <p> <img src="images/about.gif" alt="" class="right" /> Our shop was founded in 1973. The original shop is show in the picture to the right. We have grown in size since those day now have shops in 10 states. </p></div>
+      <form name="order_form3"><!--Specials/ On sale items order form -->
+      <div class="right_box">
+      
+        <div class="title">Specials</div>
+        <div class="new_prod_box"> <a href="#">Decoration Corn $2.00</a>
+          <div class="new_prod_bg"><a href="#"><img src="images/vegetables/xfs_150x150_s80_decoration_corn_dried.jpg" alt="Decoration Corn" class="thumb" border="0" /></a> </div>
+        <input name="add_to_cart" type="submit" class="add_to_cart"  value="Add to Cart" onclick="placeOrder('Vgw9','Decoration Corn','2.00',8)">
+        <br>
+          <span class="form_row">Quantity:</span>
+          <input name="qty8" size="1" value="1" maxlength="1" onfocus="clearValue('8')" />
+        </div>
+        <div class="new_prod_box"> <a href="#">Garlic<br>
+        $2.00</a>
+          <div class="new_prod_bg"><a href="#"><img src="images/vegetables/xfs_150x150_s80_fresh_garlic_206889.jpg" alt="Garlic" class="thumb" border="0" /></a> </div>
+       <input name="add_to_cart" type="submit" class="add_to_cart"  value="Add to Cart" onclick="placeOrder('Vg10','Garlic','2.00',9)">
+       <br>
+          <span class="form_row">Quantity:</span>
+          <input name="qty9" size="1" value="1" maxlength="1" onfocus="clearValue('9')" />
+        </div>
+        <div class="new_prod_box"> <a href="#">Romanesco<br> $2.00</a>
+          <div class="new_prod_bg"><a href="#"><img src="images/vegetables/xfs_150x150_s80_green_cauliflower_romanesco_cabbage.jpg" alt="Romanesco" class="thumb" border="0" /></a> </div>
+        <input name="add_to_cart" type="submit" class="add_to_cart"  value="Add to Cart" onclick="placeOrder('Vg11','Romanesco','2.00',10)">
+        <br>
+          <span class="form_row">Quantity:</span>
+          <input name="qty10" size="1" value="1" maxlength="1" onfocus="clearValue('10')" />
+        </div>
+        
+      </div>
+      </form>
+      <div class="right_box">
+        <div class="title">Categories</div><!--Categories Listing -->
+        <ul class="list">
+          <li><a href="#">Gardening Tools</a></li>
+          <li><a href="#">Seeds</a></li>
+          <li><a href="#">specials</a></li>
+          <li><a href="#">Fertilizer</a></li>
+          <li><a href="#">Sprinklers</a></li>
+          <li><a href="#">Trellises</a></li>
+          <li><a href="#">Garden Hoses</a></li>
+          <li><a href="#">Spreaders</a></li>
+          <li><a href="#">Vegetables</a></li>
+          <li><a href="#">flower gifts</a></li>
+          <li></li>
+        </ul>
+        <div class="title">Partners</div><!--Partners Listing -->
+        <ul class="list">
+          <li><a href="#">Home Depot</a></li>
+          <li><a href="#">Lowes</a></li>
+          <li><a href="#">Kmart</a></li>
+          <li><a href="#">Burpee's</a></li>
+          <li><a href="#">Farmer's Supply</a></li>
+          <li><a href="#">Stokes Seeds</a></li>
+          <li><a href="#">specials</a></li>
+          <li><a href="#">hollidays gifts</a></li>
+          <li><a href="#">accesories</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--end of right content-->
+    <div class="clear"></div>
+  </div>
+  <!--end of center content-->
+  <div class="footer"><!--Footer content-->
+    <div class="right_footer"> <a href="#">about us </a><a href="#">services</a><a href="#"> privacy</a> <a href="#">policy</a> <a href="#">contact us </a></div>
+ <div class="right_footer"><a href="http://all-free-download.com/free-photos/flower-images.html">All images obtained from </a><a href="http://all-free-download.com/free-photos/flower-images.html">All-Free-Download.com</a></div>
+  </div>
+</div>
+</body>
+</html>
